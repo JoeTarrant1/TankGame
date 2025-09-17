@@ -16,7 +16,7 @@ public class MapReader {
 
     public void fillMapArray(){
         //This will try to find the specified file, if it cant it will throw an exception
-        try (Scanner scanner = new Scanner(Paths.get("C:\\Users\\tarra\\OneDrive\\Documents\\JosephTarrant22-Tim-TankGame\\TankGame\\res\\Maps\\Test Map.txt"))) {
+        try (Scanner scanner = new Scanner(Paths.get("C:\\Users\\tarra\\OneDrive\\Documents\\TankGame\\TankGame\\res\\Maps\\Test Map.txt"))) {
             int row = 0;
             //This loop will read lines of the file until it reaches the last line
             while (scanner.hasNextLine()){
@@ -75,3 +75,4 @@ public class MapReader {
         return mapArray[x][y];
     }
 }
+
